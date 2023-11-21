@@ -22,14 +22,14 @@ A piece of advice about processing the lines of the input files. For each line o
 # The Game Interface
 You may devise your own interface for playing the game, and need not follow the structure of the sample solution above. But you do need to support the following functionality:
 
-- change the center of the acting universe to a valid actor
-- find the shortest path to an actor from the current center of the universe
-- find the number of actors who have a path (connected by some number of steps) to the current center
-- find the average path length over all actors who are connected by some path to the current center
+  - change the center of the acting universe to a valid actor
+  - find the shortest path to an actor from the current center of the universe
+  - find the number of actors who have a path (connected by some number of steps) to the current center
+  - find the average path length over all actors who are connected by some path to the current center
 In addition, your program should help you find other possible Bacons, according to two different criteria:
 
-- degree (number of costars). This is the same as in the short assignment.
-- average separation (path length) when serving as center of the universe. This simply requires looping over all the actors one by one. Consider each one as the center of the universe, find the average path length using the method above, and store it away for sorting. So just a few lines of code. It could take some time, but under a minute on my machine with the sample solution. Since not all actors are in the Bacon universe (have a path to him), you can limit the result to those that are.
+  - degree (number of costars). This is the same as in the short assignment.
+  - average separation (path length) when serving as center of the universe. This simply requires looping over all the actors one by one. Consider each one as the center of the      universe, find the average path length using the method above, and store it away for sorting. So just a few lines of code. It could take some time, but under a minute on my machine with the sample solution. Since not all actors are in the Bacon universe (have a path to him), you can limit the result to those that are.
 
 Java notes re the command-line interface. The info retrieval lecture demonstrated the use of Scanner to get a line of input. Also note that Integer.parseInt will extract an int from a String (throwing an exception if the format is invalid).
 
