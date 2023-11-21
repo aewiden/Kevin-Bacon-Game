@@ -7,7 +7,6 @@ import java.util.*;
  * Creates and properly maps actors to movies and movies to actors from read files
  *
  * @author Avery Widen
- * @author Olivia Sasse
  */
 
 
